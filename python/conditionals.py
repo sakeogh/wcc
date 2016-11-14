@@ -18,15 +18,34 @@
 #print('You should tip $' + str(tip))
 #print('Your total cost would be $' + str(total_price))
 
-temp = int(raw_input('What is the temperature?'))
+#temp = int(raw_input('What is the temperature?'))
+#print('You should bring the following items:')
+#if temp <= 40: #If the temp is less than 40 degrees:
+#    print('Coat') #Bring a light coat
+#    print('Hat') #Bring a hat
+#    print('Gloves') #Bring gloves
+#elif temp <= 70: #Otherwise, if the temp is greater than 40 degrees but less than 70 degrees:
+#    print('Coat') #Bring a light coat
+#    print('Hat') #Bring a hat
+#else: #Otherwise:
+#    print('Nothing!') #Bring just the clothes you're wearing
 
-print('You should bring the following items:')
-if temp <= 40: #If the temp is less than 40 degrees:
-    print('Coat') #Bring a light coat
-    print('Hat') #Bring a hat
-    print('Gloves') #Bring gloves
-elif temp <= 70: #Otherwise, if the temp is greater than 40 degrees but less than 70 degrees:
-    print('Coat') #Bring a light coat
-    print('Hat') #Bring a hat
-else: #Otherwise:
-    print('Nothing!') #Bring just the clothes you're wearing
+#age = int(raw_input('How old are you?'))
+#if age < 3:
+#    print('baby')
+#elif age < 18:
+#    print('child')
+#else:
+#    print('adult')
+
+age = int(raw_input('How old are you?'))
+if age < 3:
+    print('baby')
+elif age < 16:
+    print('child')
+elif age < 18:
+    print('adolescent')
+elif age < 21:
+    print('young adult')
+else:
+    print('adult')
