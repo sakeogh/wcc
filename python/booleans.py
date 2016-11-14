@@ -34,6 +34,33 @@
 #print(age > 12 and age < 19 and age != 5) # Expected outcome: False
 #age = -1
 #print(age > 12 and age < 19) # Expected outcome: False
-age = 10
+#age = 10
+#print(age > 25 or age < 15) # Expected outcome: False (and true if 'or')
 # Could the above expression ever be True? If change 'and' to 'or'
+
+#gesture = 'rock'
+#print(gesture == 'rock' or gesture == 'paper' or gesture == 'scissors') # Expected outcome: True
+
+#gesture = 'pape'
+#print(gesture == 'rock' or gesture == 'paper' or gesture == 'scissors') # Expected outcome: False
+
+#gesture = 'rock'
+#print(gesture == 'rock' and gesture == 'paper' or gesture == 'scissors')
+
+#age = int(raw_input('How old are you?'))
+#print(age >= 5 and age <= 10)
+
+#age = int(raw_input('How old are you?'))
 #print(age == 5 or age == 6 or age == 7 or age == 8 or age == 9 or age == 10)
+
+#age = raw_input('How old are you?')
+#print(age == '5' or age == '6' or age == '7' or age == '8' or age == '9' or age == '10')
+
+#age = int(raw_input('How old are you?'))
+#print(age > 5 and age < 10)
+
+#age = int(raw_input('How old are you?'))
+#print(age == 6 or age == 7 or age == 8 or age == 9)
+
+age = raw_input('How old are you?')
+print(age == '6' or age == '7' or age == '8' or age == '9')
