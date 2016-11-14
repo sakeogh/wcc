@@ -36,3 +36,4 @@
 #print(age > 12 and age < 19) # Expected outcome: False
 age = 10
 # Could the above expression ever be True? If change 'and' to 'or'
+#print(age == 5 or age == 6 or age == 7 or age == 8 or age == 9 or age == 10)
