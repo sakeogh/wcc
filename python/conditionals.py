@@ -38,14 +38,35 @@
 #else:
 #    print('adult')
 
+#age = int(raw_input('How old are you?'))
+#if age < 3:
+#    print('baby')
+#elif age < 16:
+#    print('child')
+#elif age < 18:
+#    print('adolescent')
+#elif age < 21:
+#    print('young adult')
+#else:
+#    print('adult')
+
+#age = int(raw_input('How old are you?'))
+#if age < 18:
+#    print('child')
+#else:
+#    print('adult')
+
+#age = int(raw_input('How old are you?'))
+#if age > 75:
+#    print('retired')
+
 age = int(raw_input('How old are you?'))
-if age < 3:
-    print('baby')
-elif age < 16:
-    print('child')
-elif age < 18:
-    print('adolescent')
-elif age < 21:
-    print('young adult')
-else:
-    print('adult')
+
+if age > 16:
+    print('You can drive')
+if age > 18:
+    print('You can vote')
+if age > 21:
+    print('You can join the military')
+if age > 75:
+    print('You can retire')
