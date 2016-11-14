@@ -19,5 +19,20 @@
 #print('car' > 'cat') # Expected outcome: False
 
 #print 'a' > 2 # Outcome: True
-answer = int(raw_input('What is 1 + 1? '))
-print(answer == 2)
+#answer = int(raw_input('What is 1 + 1? '))
+#print(answer == 2)
+
+#age = 1
+#print(age > 12 and age < 19) # Expected outcome: False
+#age = 14
+#print(age > 12 and age < 19) # Expected outcome: True
+#age = 19
+#print(age > 12 and age < 19) # Expected outcome: False
+#age = 18
+#print(age > 12 and age < 19 and age != 5) # Expected outcome: True
+#age = 5
+#print(age > 12 and age < 19 and age != 5) # Expected outcome: False
+#age = -1
+#print(age > 12 and age < 19) # Expected outcome: False
+age = 10
+# Could the above expression ever be True? If change 'and' to 'or'
