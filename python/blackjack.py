@@ -16,3 +16,4 @@ print('Player card: ' + str(player_card1))
 print('Computer card:  ' + str(computer_card1))
 
 print(cards) # To see the list after two cards have been popped off.
+decision = raw_input('\nIf you want to stay type `s`, if you want to hit type `h`: ')
