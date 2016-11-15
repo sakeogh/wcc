@@ -6,7 +6,7 @@ cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11]
 
 random.shuffle(cards)
 
-print(cards) # To see the list after being shuffled
+#print(cards) # To see the list after being shuffled
 
 # Round 1
 player_card1 = cards.pop()
@@ -15,5 +15,17 @@ computer_card1 = cards.pop()
 print('Player card: ' + str(player_card1))
 print('Computer card:  ' + str(computer_card1))
 
-print(cards) # To see the list after two cards have been popped off.
+#print(cards) # To see the list after two cards have been popped off.
 decision = raw_input('\nIf you want to stay type `s`, if you want to hit type `h`: ')
+
+# Round 2
+if decision == 's':
+    print('Your card: ' + str(player_card1));
+    computer_card2 = cards.pop()
+    print('Computer cards:  ' + str(computer_card1)+ ', ' + str(computer_card2))
+elif decision == 'h':
+    player_card2 = cards.pop()
+    computer_card2 = cards.pop()
+
+    print('Player card: ' + str(player_card1)+ ', ' + str(player_card2))
+    print('Computer card:  ' + str(computer_card1)+ ', ' + str(computer_card2))
