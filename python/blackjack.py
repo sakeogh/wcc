@@ -22,10 +22,23 @@ decision = raw_input('\nIf you want to stay type `s`, if you want to hit type `h
 if decision == 's':
     print('Your card: ' + str(player_card1));
     computer_card2 = cards.pop()
-    print('Computer cards:  ' + str(computer_card1)+ ', ' + str(computer_card2))
+    print('Computer cards:  ' + str(computer_card1) + ', ' + str(computer_card2))
 elif decision == 'h':
     player_card2 = cards.pop()
     computer_card2 = cards.pop()
 
-    print('Player card: ' + str(player_card1)+ ', ' + str(player_card2))
-    print('Computer card:  ' + str(computer_card1)+ ', ' + str(computer_card2))
+    print('Player card: ' + str(player_card1) + ', ' + str(player_card2))
+    print('Computer card:  ' + str(computer_card1) + ', ' + str(computer_card2))
+
+# Round 3
+player_card_total2 = player_card1 + player_card2
+computer_card_total2 = computer_card1 + computer_card2
+
+if (player_card_total2 > 21) and (computer_card_total2 <= 21):
+    print('Game over. Computer wins.');
+elif (player_card_total2 <= 21) and (computer_card_total2 > 21):
+    print('Game over. You win.');
+elif (player_card_total2 == 21) and (computer_card_total2 == 21):
+    print("Game over. It's a draw!");
+else:
+    decision2 = raw_input('\nIf you want to stay type `s`, if you want to hit type `h`: ')
