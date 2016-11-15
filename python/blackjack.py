@@ -65,14 +65,22 @@ elif (decision2 == 'h') and (computer_card_total2 > 16):
     print('Your card: ' + str(player_card1) + ', ' + str(player_card2) + ', ' + str(player_card3))
     print('Computer cards:  ' + str(computer_card1) + ', ' + str(computer_card2))
 
+print('Game over')
+
 player_card_total3 = player_card1 + player_card2 + player_card3
 computer_card_total3 = computer_card1 + computer_card2 + computer_card3
+print('Your cards: ' + str(player_card_total3))
+print('Computer cards: ' + str(computer_card_total3))
 
-if (player_card_total2 > 21) and (computer_card_total2 <= 21):
-    print('Game over. Computer wins.');
-elif (player_card_total2 <= 21) and (computer_card_total2 > 21):
-    print('Game over. You win.');
-elif (player_card_total2 == 21) and (computer_card_total2 == 21):
-    print("Game over. It's a draw!");
+if (player_card_total3 > 21) and (computer_card_total3 > 21):
+    print('No winner.')
+elif (player_card_total3 == computer_card_total3):
+    print("It's a draw!")
+elif (computer_card_total3 > 21):
+    print('You win.')
+elif (player_card_total3 > 21):
+    print('Computer wins.')
+elif (player_card_total3 > computer_card_total3):
+    print('You win.')
 else:
-    print('Bye')
+    print('Cpmuter wins.')
