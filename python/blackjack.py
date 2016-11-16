@@ -19,6 +19,16 @@ print('Computer card:  ' + str(computer_card1))
 decision = raw_input('\nIf you want to stay type `s`, if you want to hit type `h`: ')
 
 # Round 2
+# Round 2 from wcc -  I wrote everything twice - could have cut corners
+#if decision == 'h':
+#    player_card2 = cards.pop()
+#else:
+#    player_card2 = 0
+#computer_card2 = cards.pop()
+#print('Your cards: ' + str(player_card1) + ", " + str(player_card2))
+#print('Computer cards: ' + str(computer_card1) + ", " + str(computer_card2))
+#decision = raw_input('\nIf you want to stay type `s`, if you want to hit type `h`: ')
+
 if decision == 's':
     player_card2 = 0
     print('Your card: ' + str(player_card1));
@@ -43,7 +53,7 @@ elif (player_card_total2 == 21) and (computer_card_total2 == 21):
 else:
     decision2 = raw_input('\nIf you want to stay type `s`, if you want to hit type `h`: ')
 
-# Round 3
+# Round 3 - again I wrote everything out for every condition
 if (decision2 == 's') and (computer_card_total2 <= 16):
     player_card3 = 0
     print('Your cards:  '+ str(player_card1) + ', ' + str(player_card2))
